@@ -15,7 +15,6 @@ module.exports = {
         console.log('sqlConnect err')
         return
       }
-      console.log('sqlConnect successful')
       conn.query(sql, sqlArr, callBack)
       conn.release()
     })
